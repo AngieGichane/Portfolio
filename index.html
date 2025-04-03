@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Aurora Background Canvas -->
+  <canvas id="auroraCanvas" class="aurora-background"></canvas>
+  
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <span class="aurora-gradient">Angela Gichane</span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            Creative <span class="aurora-gradient">Developer</span> & <span class="aurora-gradient">Designer</span>
+          </h1>
+          <p class="text-muted">
+            Hello, I'm Angela, an aspiring web developer and designer based in Nairobi. 
+            I'm passionate about creating visually appealing websites that are both functional and user-friendly. 
+            Though I'm early in my development journey, I've been building my skills in HTML, CSS, and JavaScript, and I'm eager to learn more advanced technologies like React. 
+            I'm particularly interested in how good design and clean code work together to create meaningful digital experiences. 
+            I'm excited to grow my skills through challenging projects and am looking forward to connecting with mentors and collaborators who can help me on this journey.
+          <div class="buttons">
+            <a href="#projects" class="button glow-button">View Projects</a>
+            <a href="#contact" class="button outline-glow-button">Contact Me</a>
+          </div>
+          
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number aurora-gradient">2</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item">
+              <div class="stat-number aurora-gradient">5</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item">
+              <div class="stat-number aurora-gradient">3</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-image">
+          <div class="aurora-glow"></div>
+          <img src="Me.jpg" alt="Hero Image" class="floating aurora-border">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="aurora-gradient">About Me</h2>
+        <p>Get to know my experience and skills</p>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-container aurora-border floating">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" alt="About Me">
+          </div>
+          <div class="aurora-blob small bottom-right floating-delayed"></div>
+          <div class="aurora-blob small top-left floating-delayed-more"></div>
+        </div>
+        
+        <div class="about-info">
+          <h3>Creative Developer & Designer</h3>
+          
+          <p class="text-muted">
+            I'm an enthusiastic web developer at the beginning of my career, with a growing portfolio of personal projects and freelance work. 
+            I started coding about two years ago and have fallen in love with turning design concepts into functioning websites. 
+            While I'm still developing my technical expertise, I bring a fresh perspective and eagerness to learn to every project. 
+            I'm currently focused on mastering responsive design principles and building a solid foundation in JavaScript before moving to more advanced frameworks. 
+            I believe in creating simple, intuitive websites that are accessible to everyone.
+          </p>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML/CSS</span>
+                <span class="skill-percentage aurora-text">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-percentage aurora-text">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skills">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Web Development</span>
+                  <span class="skill-percentage aurora-text">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Mobile Development</span>
+                <span class="skill-percentage aurora-text">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 60%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">SQL</span>
+                <span class="skill-percentage aurora-text">30%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 30%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Firebase</span>
+                <span class="skill-percentage aurora-text">15%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 15%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Backend Development</span>
+                <span class="skill-percentage aurora-text">7%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 7%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="resume.pdf" download class="button glow-button">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Education Section -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-title scroll-animate">
+      <h2 class="aurora-gradient">Education Background</h2>
+      <p>My academic journey and qualifications</p>
+      <div class="title-underline"></div>
+    </div>
+    
+    <div class="education-timeline">
+      <!-- Education Item 1 -->
+      <div class="education-item scroll-animate">
+        <div class="education-year aurora-gradient">2023 - Present</div>
+        <div class="education-content aurora-border">
+          <h3>BSc in Computer Science</h3>
+          <p class="education-institution">University</p>
+          <p class="text-muted">Currently in my second year of university studies. Developing strong foundations in programming languages including Python, Java, C, and C++. Focusing on building both theoretical knowledge and practical development skills.</p>
+          <div class="education-tags">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C/C++</span>
+            <span>Algorithms</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Education Item 2 -->
+      <div class="education-item scroll-animate">
+        <div class="education-year aurora-gradient">Jan - May 2023</div>
+        <div class="education-content aurora-border">
+          <h3>Software Development Certification</h3>
+          <p class="education-institution">MODCOM Institute of Technology</p>
+          <p class="text-muted">Completed an intensive software development course covering multiple programming languages and frameworks. Created practical projects including Flask applications and CRUD systems.</p>
+          <div class="education-tags">
+            <span>Python</span>
+            <span>Kotlin</span>
+            <span>Machine Learning</span>
+            <span>Data Science</span>
+            <span>Flask</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-title scroll-animate">
+        <h2 class="aurora-gradient">Featured Projects</h2>
+        <p>Check out some of my recent work</p>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card scroll-animate">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1597088054119-922a3eb7bb81?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FudmFzJTIwZHJhd2luZyUyMGJvYXJkfGVufDB8fDB8fHww" alt="Canvas Drawing Board Project">
+          </div>
+          <div class="project-content">
+            <h3>Canvas Drawing Board</h3>
+            <p>An interactive drawing application that allows users to create digital artwork with various brush sizes and colors. Users can save their creations to a Firebase gallery for sharing and future reference.</p>
+            <div class="project-tags">
+              <span>HTML Canvas</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-links centered">
+              <a href="https://github.com/user/aurora-canvas" class="button small glow-button">View Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project Card 2 -->
+        <div class="project-card scroll-animate">
+          <div class="project-image">
+            <img src="https://media.istockphoto.com/id/1484799147/photo/hanging-clothes-on-sale-for-teens-and-kids-in-the-mall.webp?a=1&b=1&s=612x612&w=0&k=20&c=_OEbRrSXuY-09jltAqseSrsZLTSOLfycC32dhefkt84=" alt="Sparkles Kids Project">
+          </div>
+          <div class="project-content">
+            <h3>Sparkles Kids</h3>
+            <p>A responsive website for a children's clothing boutique/shop. Features product displays, category navigation, and contact information.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="project-links centered">
+              <a href="https://github.com/AngieGichane/Rembesha-Kids-Web-Page" class="button small glow-button">View Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project Card 3 -->
+        <div class="project-card scroll-animate">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80" alt="Secure Login System Project">
+          </div>
+          <div class="project-content">
+            <h3>Secure Login System</h3>
+            <p>A secure authentication system implementing session-based login with password hashing, secure cookies, and SQL injection prevention.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>Javascript</span>
+              <span>PHP</span>
+              <span>Security</span>
+            </div>
+            <div class="project-links centered">
+              <a href="https://github.com/AngieGichane/Secure_Login_system" class="button small glow-button">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+<section id="interests" class="section">
+  <div class="container">
+    <div class="section-title scroll-animate">
+      <h2 class="aurora-gradient">Interests & Hobbies</h2>
+      <p>What I'm passionate about beyond coding</p>
+      <div class="title-underline"></div>
+    </div>
+    
+    <div class="interests-grid">
+      <!-- Interest Item 1 -->
+      <div class="interest-card scroll-animate">
+        <div class="interest-icon">🎨</div>
+        <h3>Mobile App Development</h3>
+        <p class="text-muted">I develop cross-platform mobile applications using React Native, exploring how to translate web experiences to smaller screens.</p>
+      </div>
+      
+      <!-- Interest Item 2 -->
+      <div class="interest-card scroll-animate">
+        <div class="interest-icon">🏃‍♀️</div>
+        <h3>Tech meetups</h3>
+        <p class="text-muted">I organize local developer meetups in Nairobi where we discuss emerging web technologies and collaborate on community projects.</p>
+      </div>
+      
+      <!-- Interest Item 3 -->
+      <div class="interest-card scroll-animate">
+        <div class="interest-icon">📚</div>
+        <h3>Frontend Hackathons</h3>
+        <p class="text-muted">I participate in coding competitions and hackathons, challenging myself to build innovative solutions under tight deadlines.</p>
+      </div>
+      
+      <!-- Interest Item 4 -->
+      <div class="interest-card scroll-animate">
+        <div class="interest-icon">🎮</div>
+        <h3>Web Animation</h3>
+        <p class="text-muted">I experiment with advanced CSS animations and WebGL to create immersive interactive experiences that push the boundaries of web design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="aurora-gradient">Get In Touch</h2>
+        <p>Have a project in mind? Let's work together!</p>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <p>angiegichane@gmail.com</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Phone</h3>
+            <p>+254 700 804 463</p>
+          </div>
+          
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Location</h3>
+            <p>Nairobi, Kenya</p>
+          </div>
+        </div>
+        
+        <div class="contact-form aurora-border">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+            </div>
+            
+            <button type="submit" class="button glow-button">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="aurora-gradient">Portfolio</span>
+        </div>
+        
+        <div class="copyright text-muted">
+          © <span id="currentYear"></span> All Rights Reserved
+        </div>
+        
+        <div class="social-links">
+          <a href="https://twitter.com/username" class="social-link">Twitter</a>
+          <a href="https://github.com/username" class="social-link">GitHub</a>
+          <a href="https://linkedin.com/in/username" class="social-link">LinkedIn</a>
+          <a href="https://dribbble.com/username" class="social-link">Slack</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase Configuration -->
+  <!-- Replace these Firebase imports -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <!-- Make sure the script is loaded at the end of the body -->
+  <script src="script.js"></script>
+</body>
+</html>

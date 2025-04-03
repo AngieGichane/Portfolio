@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angela Gichane - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: #000;
+      background-color: #fff;
+    }
+    
+    .resume-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .sidebar {
+      padding: 40px;
+      background: #f9f9f9;
+      border-right: 1px solid #e0e0e0;
+    }
+    
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #9b87f5;
+      padding: 3px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    
+    .title {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #9b87f5;
+    }
+    
+    .contact-info {
+      margin-bottom: 30px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .contact-icon {
+      font-size: 18px;
+      width: 20px;
+      margin-right: 10px;
+      color: #9b87f5;
+    }
+    
+    .contact-text {
+      font-size: 14px;
+    }
+    
+    .sidebar-section {
+      margin-bottom: 30px;
+    }
+    
+    .sidebar-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+    
+    .sidebar-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: #9b87f5;
+    }
+    
+    .skill-item {
+      margin-bottom: 15px;
+    }
+    
+    .skill-name {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .skill-percentage {
+      color: #9b87f5;
+    }
+    
+    .skill-bar {
+      height: 5px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .skill-progress {
+      height: 100%;
+      background: #9b87f5;
+    }
+    
+    .languages-list {
+      list-style: none;
+    }
+    
+    .language-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .language-name {
+      font-size: 14px;
+    }
+    
+    .language-level {
+      color: #9b87f5;
+      font-size: 14px;
+    }
+    
+    .main-content {
+      padding: 40px;
+      background: #fff;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    .section-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #9b87f5;
+    }
+    
+    .about-text {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #9b87f5;
+    }
+    
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 5.5px;
+      width: 1px;
+      height: calc(100% + 18px);
+      background: rgba(155, 135, 245, 0.3);
+    }
+    
+    .timeline-item:last-child::after {
+      display: none;
+    }
+    
+    .timeline-date {
+      font-size: 14px;
+      color: #33C3F0;
+      margin-bottom: 5px;
+    }
+    
+    .timeline-title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    
+    .timeline-subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    
+    .timeline-text {
+      font-size: 14px;
+      color: #333;
+    }
+    
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .project-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+      transition: transform 0.3s;
+    }
+    
+    .project-title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .project-tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: rgba(155, 135, 245, 0.1);
+      color: #9b87f5;
+    }
+    
+    .project-description {
+      font-size: 13px;
+      color: #333;
+    }
+    
+    .certificates-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    
+    .certificate-item {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .certificate-title {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    
+    .certificate-issuer {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    
+    .certificate-date {
+      font-size: 12px;
+      color: #33C3F0;
+    }
+    
+    .interests-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    
+    .interest-item {
+      text-align: center;
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .interest-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .interest-name {
+      font-size: 14px;
+    }
+    
+    @media print {
+      body {
+        padding: 0;
+      }
+      
+      .resume-container {
+        box-shadow: none;
+        border: none;
+      }
+      
+      .project-card, .certificate-item, .interest-item {
+        break-inside: avoid;
+      }
+      
+      .contact-icon, .skill-percentage, .language-level {
+        color: #333 !important;
+      }
+      
+      .sidebar-title::after, .section-title::after, .timeline-item::before {
+        background: #333 !important;
+      }
+      
+      .skill-progress {
+        background: #333 !important;
+      }
+      
+      .timeline-date, .certificate-date {
+        color: #333 !important;
+      }
+      
+      .project-tag {
+        background: #eee !important;
+        color: #333 !important;
+        border: 1px solid #ccc;
+      }
+      
+      a {
+        color: #000 !important;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .resume-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      
+      .projects-grid,
+      .certificates-list,
+      .interests-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="Me.jpg" alt="Angela Gichane" class="profile-img">
+      <h1 class="name">Angela Gichane</h1>
+      <p class="title">Web Developer & Designer</p>
+      
+      <!-- Contact Information -->
+      <div class="sidebar-section contact-info">
+        <h2 class="sidebar-title">Contact</h2>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <span class="contact-text">angiegichane@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <span class="contact-text">+254 700 804 463</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span class="contact-text">Nairobi, Kenya</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🔗</span>
+          <span class="contact-text">github.com/AngieGichane</span>
+        </div>
+      </div>
+      
+      <!-- Skills -->
+      <div class="sidebar-section skills">
+        <h2 class="sidebar-title">Technical Skills</h2>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>HTML/CSS</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Python</span>
+            <span class="skill-percentage">80%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>JavaScript</span>
+            <span class="skill-percentage">70%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Responsive Design</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>SQL</span>
+            <span class="skill-percentage">30%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 30%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name">
+            <span>Firebase</span>
+            <span class="skill-percentage">15%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 15%"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Languages -->
+      <div class="sidebar-section languages">
+        <h2 class="sidebar-title">Languages</h2>
+        <ul class="languages-list">
+          <li class="language-item">
+            <span class="language-name">English</span>
+            <span class="language-level">Fluent</span>
+          </li>
+          <li class="language-item">
+            <span class="language-name">Swahili</span>
+            <span class="language-level">Native</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Interests -->
+      <div class="sidebar-section">
+        <h2 class="sidebar-title">Interests</h2>
+        <div class="interests-container">
+          <div class="interest-item">
+            <div class="interest-icon">🎨</div>
+            <div class="interest-name">UI Design</div>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon">📱</div>
+            <div class="interest-name">App Dev</div>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon">🌐</div>
+            <div class="interest-name">Web Animation</div>
+          </div>
+          <div class="interest-item">
+            <div class="interest-icon">👩‍💻</div>
+            <div class="interest-name">Hackathons</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- About Section -->
+      <div class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I'm an enthusiastic web developer at the beginning of my career, with a growing portfolio of personal projects and freelance work. 
+          I started coding about two years ago and have fallen in love with turning design concepts into functioning websites. 
+          While I'm still developing my technical expertise, I bring a fresh perspective and eagerness to learn to every project.
+        </p>
+        <p class="about-text">
+          I'm currently focused on mastering responsive design principles and building a solid foundation in JavaScript before moving to more advanced frameworks. 
+          I believe in creating simple, intuitive websites that are accessible to everyone.
+        </p>
+      </div>
+      
+      <!-- Education -->
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <h3 class="timeline-title">BSc in Computer Science</h3>
+          <div class="timeline-subtitle">University</div>
+          <p class="timeline-text">
+            Currently in my second year of university studies. Developing strong foundations in programming languages including Python, Java, C, and C++. Focusing on building both theoretical knowledge and practical development skills.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jan - May 2023</div>
+          <h3 class="timeline-title">Software Development Certification</h3>
+          <div class="timeline-subtitle">MODCOM Institute of Technology</div>
+          <p class="timeline-text">
+            Completed an intensive software development course covering multiple programming languages and frameworks. Created practical projects including Flask applications and CRUD systems.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Projects -->
+      <div class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">Canvas Drawing Board</h3>
+            <div class="project-tags">
+              <span class="project-tag">HTML Canvas</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <p class="project-description">
+              An interactive drawing application that allows users to create digital artwork with various brush sizes and colors. Users can save their creations to a Firebase gallery.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Sparkles Kids</h3>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <p class="project-description">
+              A responsive website for a children's clothing boutique. Features product displays, category navigation, and contact information.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Secure Login System</h3>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Security</span>
+            </div>
+            <p class="project-description">
+              A secure authentication system implementing session-based login with password hashing, secure cookies, and SQL injection prevention.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Personal Portfolio</h3>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            <p class="project-description">
+              My personal portfolio website featuring animated backgrounds, responsive design, and interactive elements.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Experience -->
+      <div class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline-item">
+          <div class="timeline-date">Jun 2024 - Present</div>
+          <h3 class="timeline-title">Freelance Web Developer</h3>
+          <div class="timeline-subtitle">Self-employed</div>
+          <p class="timeline-text">
+            Design and develop websites for small businesses and individuals. Create responsive layouts, implement interactive features, and ensure cross-browser compatibility.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Certifications -->
+      <div class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certificates-list">
+          <div class="certificate-item">
+            <h3 class="certificate-title">Responsive Web Design</h3>
+            <div class="certificate-issuer">freeCodeCamp</div>
+            <div class="certificate-date">April 2023</div>
+          </div>
+          <div class="certificate-item">
+            <h3 class="certificate-title">Software Development</h3>
+            <div class="certificate-issuer">MODCOM Institute of Technology</div>
+            <div class="certificate-date">May 2023</div>
+          </div>
+          <div class="certificate-item">
+            <h3 class="certificate-title">JavaScript Algorithms and Data Structures</h3>
+            <div class="certificate-issuer">freeCodeCamp</div>
+            <div class="certificate-date">August 2023</div>
+          </div>
+          <div class="certificate-item">
+            <h3 class="certificate-title">Python Programming</h3>
+            <div class="certificate-issuer">Codecademy</div>
+            <div class="certificate-date">January 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
