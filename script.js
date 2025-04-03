@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "An interactive drawing application that allows users to create digital artwork with various brush sizes and colors. Users can save their creations to a Firebase gallery for sharing and future reference.",
             image: "https://images.unsplash.com/photo-1597088054119-922a3eb7bb81?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FudmFzJTIwZHJhd2luZyUyMGJvYXJkfGVufDB8fDB8fHww",
             tags: ["HTML Canvas", "CSS", "JavaScript", "Firebase"],
-            codeUrl: "https://github.com/user/aurora-canvas"
+            codeUrl: "https://github.com/AngieGichane/Canvas-Drawing-Board"
         },
         {
             title: "Sparkles Kids",
