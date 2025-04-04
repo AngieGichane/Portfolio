@@ -2,7 +2,7 @@
 
 A responsive personal portfolio website showcasing my development skills, projects, and professional journey. This website features modern design elements with interactive components and a sleek aurora-themed UI.
 
-![Portfolio Preview](![Portfolio Preview](Portfolio-Preview.png)
+![Portfolio Preview](Portfolio-Preview.png)
 
 ## 📋 Features
 
